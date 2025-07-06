@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Forecast</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Search</button>
+    </div>
+  </div>
+
+  <div class="weather-cards-row">
+    <div class="weather-card small" id="todayCard" style="display: none;">
+      <h2 id="cityName"></h2>
+      <p id="date"></p>
+      <img id="weatherIcon" src="" alt="weather icon" />
+      <p id="description"></p>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+      <p id="pressure"></p>
+      
+    </div>
+
+    <div class="weather-card" id="tomorrowCard" style="display: none;">
+      <h2>Tomorrow</h2>
+      <p id="tomorrowDate"></p>
+      <img id="tomorrowIcon" src="" alt="weather icon" />
+      <p id="tomorrowDescription"></p>
+      <p id="tomorrowTemp"></p>
+      <p id="tomorrowHumidity"></p>
+      <p id="tomorrowWind"></p>
+      <p id="tomorrowPressure"></p>
+    </div>
+  </div>
+
+  <script src="function.js"></script>
+</body>
+</html>
